@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milk & Beans</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <h1 class="logo">Milk & Beans</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Menú</a>
+      <a href="#">Historia</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Brewed to Perfection</h2>
+      <p>Café artesanal preparado con amor y tradición.</p>
+      <button id="orderBtn" type="button">Ordenar café</button>
+    </div>
+  </section>
+
+ <section class="season">
+  <h3 class="season-title">Sabores de la temporada</h3>
+
+  <div class="temp-carousel">
+    <button class="nav prev">‹</button>
+
+    <div class="temp">
+      <div class="temporada-image">
+        <img id="tempImg" alt="">
+      </div>
+
+      <div class="temporada-text">
+        <h2 id="tempTitle"></h2>
+        
+        <p id="tempDesc"></p>
+      </div>
+    </div>
+
+    <button class="nav next">›</button>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Milk & Beans.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
