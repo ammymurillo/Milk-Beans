@@ -1,0 +1,189 @@
+:root {
+  --dark: #3B2416;
+  --medium: #6F4E37;
+  --black: #000000;
+  --cream: #F5EFE6;
+  --accent: #C8A27C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--black);
+  color: var(--cream);
+}
+
+/* HEADER */
+.header {
+  background: var(--dark);
+  color: var(--cream);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  color: var(--cream);
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+/* HERO */
+.hero {
+  height: 60vh;
+  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+              url("https://goloso.co.uk/wp-content/uploads/2023/01/frappe.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  text-align: center;
+  color: var(--cream);
+  font-size: 2rem;
+}
+
+.hero-text button {
+  margin-top: 1rem;
+  padding: .7rem 1.5rem;
+  background: var(--accent);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: var(--dark);
+  color: var(--cream);
+  text-align: center;
+  padding: 1rem;
+}
+
+.coffee-expand {
+  display: none;
+  margin: 4rem auto;
+  text-align: center;
+  color: var(--cream);
+}
+
+.coffee-expand h2 {
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.expand-layout {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.expand-layout img {
+  width: 220px;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,.6));
+}
+
+.info {
+  max-width: 280px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.info h4 {
+  color: var(--accent);
+  margin-bottom: .5rem;
+}
+
+#buyBtn {
+  margin-top: 3rem;
+  padding: .7rem 2rem;
+  background: var(--accent);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* TEMPORADA SECTION */
+
+.temp-carousel {
+  width: 100%;
+  margin: 4rem 0;
+  padding-left: 2rem; /* lo mueve a la izquierda */
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Espacio entre flechas y contenido */
+}
+
+/* Flechas */
+.nav {
+  background: none;
+  border: none;
+  color: var(--cream);
+  font-size: 3rem; /* Tamaño de las flechas */
+  cursor: pointer;
+  opacity: .7;
+}
+
+.nav:hover {
+  opacity: 1;
+}
+
+.nav.prev {
+  margin-right: .5rem;
+}
+
+.nav.next {
+  margin-left: .5rem;
+}
+
+/* Contenido */
+
+.season {
+  width: 100%;
+  margin: 4rem 0;
+}
+
+.season-title {
+  margin: 0 auto 2rem auto;
+  text-align: center;
+
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--cream);
+}
+
+.temp {
+  width: 100%; 
+  max-width: 1100px;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem; /* Espacio entre imagen y texto */
+  align-items: flex-start; /* Alinea al inicio de la fila */
+}
+
+.temporada-image img {
+  width: 420px; 
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0,0,0,.6);
+}
+.temporada-text h3 {
+  color: var(--cream);
+  margin-bottom: 2rem; /* Espacio debajo del título */
+}
